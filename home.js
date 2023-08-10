@@ -22,6 +22,7 @@ for (let habilidade of habilidades) {
     <div class="habilidade">
     <img src="img/${habilidade.img}" alt="">
     <p class="nome-habilidade">${habilidade.nome}</p>
+    <a href="">0 &#9825;</a>
     </div>
     `
     containerHabilidades.innerHTML += textHTML2

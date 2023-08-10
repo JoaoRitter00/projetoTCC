@@ -1,3 +1,8 @@
+:root {
+    --cor-fundo: black;
+    --cor-letras: white;
+    --segunda-cor: rgb(45, 0, 62);
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@ nav{
     background-image: url(img/2d-vetor-de-fundo-de-paisagem-noturna-de-montanha-vetor-plano-de-ceu-azul-gerado-ai_889431-800.avif);
     background-size: cover;
     position: relative;
-    border-bottom: 3px solid blueviolet;
+    border-bottom: 5px solid var(--segunda-cor);
 }
 .user {
     display: flex;
@@ -27,7 +32,7 @@ nav{
 }
 
 #container-user * {
-    color: white;
+    color: var(--cor-letras);
 }
 
 .user img {
@@ -37,7 +42,10 @@ nav{
 
 /*habilidades*/
 .habilidade {
-    padding: 10px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.674);
+    border-radius: 5px;
 }
 
 .habilidade img {
@@ -49,6 +57,17 @@ nav{
     display: flex;
     flex-wrap: wrap;
 }
+section{
+    padding: 75px;
+}
 section h1{
     padding: 15px;
+}
+.nome-habilidade{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.427);
+    
+}
+.habilidade a {
+    text-decoration: none;
+    float: right;
 }
