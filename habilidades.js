@@ -24,5 +24,30 @@ const habilidades = [
         valorAdicional: 0.5,
         img: 'paisage.jpg'
     },
+    {
+        nome: 'Espancar o Saulo',
+        valorAdicional: 0.5,
+        img: 'paisage.jpg'
+    },
+    {
+        nome: 'Espancar o Saulo',
+        valorAdicional: 0.5,
+        img: 'paisage.jpg'
+    },
+    {
+        nome: 'Espancar o Saulo',
+        valorAdicional: 0.5,
+        img: 'paisage.jpg'
+    },
+    {
+        nome: 'Espancar o Saulo',
+        valorAdicional: 0.5,
+        img: 'paisage.jpg'
+    },
+    {
+        nome: 'Espancar o Saulo',
+        valorAdicional: 0.5,
+        img: 'paisage.jpg'
+    },
 ]
 export default habilidades;

@@ -3,24 +3,33 @@
     --cor-letras: white;
     --segunda-cor: rgb(45, 0, 62);
 }
+
 * {
     margin: 0;
+
     padding: 0;
+    color: white
+}
+
+body {
+    background-color: black;
 
 }
 
 /*user*/
-nav{
+nav {
     height: 500px;
-    background-image: url(img/2d-vetor-de-fundo-de-paisagem-noturna-de-montanha-vetor-plano-de-ceu-azul-gerado-ai_889431-800.avif);
+    background-image: url(img/wallpaper.png);
     background-size: cover;
     position: relative;
     border-bottom: 5px solid var(--segunda-cor);
 }
+
 .user {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 15px;
 }
 
 #container-user {
@@ -28,7 +37,7 @@ nav{
     position: absolute;
     bottom: 0;
     width: 100%;
-    
+
 }
 
 #container-user * {
@@ -44,7 +53,9 @@ nav{
 .habilidade {
     padding: 5px;
     margin: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.674);
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
     border-radius: 5px;
 }
 
@@ -54,19 +65,28 @@ nav{
 }
 
 #container-habilidades {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
 }
-section{
+
+section {
     padding: 75px;
 }
-section h1{
+
+section h1 {
     padding: 15px;
+    font-size: 50px;
 }
-.nome-habilidade{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.427);
-    
+
+.nome-habilidade {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
+
 }
+
 .habilidade a {
     text-decoration: none;
     float: right;
