@@ -8,9 +8,12 @@ let containerUser = document.getElementById("container-user")
 for (let capas of capa) {
     let textHTML1 = `
     <div class="container-user"><div class="user">
-    <p class="nome-user">${capas.user}</p>
-    </div></div>
+    <img src="img/${capas.img}" alt="">
+    <h1 class="nome-user">${capas.user}</h1>
+    <p>${capas.competencias}</p>
+    </div>
     
+    </div>
     `
     containerUser.innerHTML += textHTML1
 }

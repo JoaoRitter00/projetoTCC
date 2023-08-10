@@ -1,26 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
+
 }
 
-#container-habilidades{
+/*user*/
+nav{
+    height: 500px;
+    background-image: url(img/2d-vetor-de-fundo-de-paisagem-noturna-de-montanha-vetor-plano-de-ceu-azul-gerado-ai_889431-800.avif);
+    background-size: cover;
+    position: relative;
+    border-bottom: 3px solid blueviolet;
+}
+.user {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container-user {
+    background-color: rgba(0, 0, 0, 0.292);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+#container-user * {
+    color: white;
+}
+
+.user img {
+    border-radius: 50%;
+    padding: 25px;
+}
+
+/*habilidades*/
+.habilidade {
+    padding: 10px;
+}
+
+.habilidade img {
+    width: 150px;
+    height: 100px;
+}
+
+#container-habilidades {
     display: flex;
     flex-wrap: wrap;
 }
-#container-user{
-    height: 250px;
-    background-image: url(img/paisage.jpg);
-    background-size: contain;
-}
-.container-user{
-    background-color: rgba(0, 0, 0, 0.292);
-    
-}
-.habilidade{
-    padding: 10px;
-    
-}
-.habilidade img{
-    width: 150px;
-    height: 100px;
+section h1{
+    padding: 15px;
 }
