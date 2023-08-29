@@ -5,6 +5,7 @@
     --titulo: 'Ruwudu', serif;
     --texto: 'Roboto', sans-serif
 }
+
 /*Geral*/
 
 * {
@@ -45,17 +46,99 @@ nav {
 .navbar-brand {
     color: white;
 }
-.contianer{
+
+.contianer {
     padding: 70px 0;
 }
-p,li{
+
+p,
+li {
     color: white;
     font-size: 14px;
 }
-#nav-container{
+
+#nav-container {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+/*sidebar*/
+.offcanvas {
+    background-color: gray;
+}
+
+.nav-user {
+    background-image: url(img/bg_1.jpg);
+    background-size: 400px 400px;
+    height: 300px;
+    text-align: center;
+}
+
+.nav-user-user {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-user-user p {
+    padding: 15px;
+    font-size: 25px;
+}
+
+.nav-user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.btn-close {
+    float: right;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links a li {
+    list-style: none;
+}
+.btn{
+    border-radius: 50%;
+    float: left;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
 /*user*/
 .usuario {
     height: 500px;

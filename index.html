@@ -33,7 +33,48 @@
 </head>
 
 <body>
+    <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </button>
 
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="nav-user"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <div class="nav-user-user"><img src="img/logo.jpg" alt="">
+                <p class="username">Minina</p>
+            </div>
+
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>Habilidades</li>
+                </a>
+                <a href="">
+                    <li>Blog</li>
+                </a>
+                <a href="">
+                    <li>Sobre Mim</li>
+                </a>
+            </ul>
+        </div>
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
 
     <div class="usuario">
         <header>
@@ -64,7 +105,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Blogs</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
