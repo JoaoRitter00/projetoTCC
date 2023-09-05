@@ -1,217 +1,232 @@
 :root {
-    --cor-fundo: black;
-    --cor-letras: white;
-    --segunda-cor: rgb(45, 0, 62);
-    --titulo: 'Ruwudu', serif;
-    --texto: 'Roboto', sans-serif
+  --cor-fundo: black;
+  --cor-letras: white;
+  --segunda-cor: rgb(45, 0, 62);
+  --titulo: "Ruwudu", serif;
+  --texto: "Roboto", sans-serif;
 }
 
 /*Geral*/
 
 * {
-    margin: 0;
-    padding: 0;
-    color: white
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 h1 {
-    font-family: var(--titulo);
+  font-family: var(--titulo);
 }
 
 body {
-    background-color: black;
-    font-family: var(--texto);
+  background-color: black;
+  font-family: var(--texto);
 }
 
 nav {
-    background-color: transparent;
-    color: white;
+  background-color: transparent;
+  color: white;
 }
 
 .nav-link {
-    color: white;
+  color: white;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .navbar-brand {
-    color: white;
+  color: white;
 }
 
 .contianer {
-    padding: 70px 0;
+  padding: 70px 0;
 }
 
 p,
 li {
-    color: white;
-    font-size: 14px;
+  color: white;
+  font-size: 14px;
 }
 
 #nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /*sidebar*/
+
 .offcanvas {
-    background-color: gray;
+  background-color: gray;
 }
 
 .nav-user {
-    background-image: url(img/bg_1.jpg);
-    background-size: 400px 400px;
-    height: 300px;
-    text-align: center;
+  background-image: url(img/bg_1.jpg);
+  background-size: 400px 400px;
+  height: 300px;
+  text-align: center;
 }
 
 .nav-user-user {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-user-user p {
-    padding: 15px;
-    font-size: 25px;
+  padding: 15px;
+  font-size: 25px;
 }
 
 .nav-user img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .btn-close {
-    float: right;
+  float: right;
 }
 
 .nav-links a {
-    text-decoration: none;
+  text-decoration: none;
+  padding: 15px;
 }
 
 .nav-links a li {
-    list-style: none;
+  list-style: none;
+  border-bottom: 1px solid rgba(82, 82, 82, 0.471);
 }
-.btn{
-    border-radius: 50%;
-    float: left;
+.btn:first-child {
+  border-radius: 47%;
+  position: fixed;
+  z-index: 4;
+  top: 5px;
 }
-
 .container {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #000000;
-    margin: 6px 0;
-    transition: 0.4s;
+  width: 35px;
+  height: 5px;
+  background-color: #000000;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
 
 /* Fade out the second bar */
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Rotate last bar */
 .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 /*user*/
 .usuario {
-    height: 500px;
-    background-image: url(img/wallpaper.png);
-    background-size: cover;
-    position: relative;
-    border-bottom: 5px solid var(--segunda-cor);
-    background-color: rgba(0, 0, 0, 0.292);
+  height: 500px;
+  background-image: url(img/wallpaper.png);
+  background-size: cover;
+  position: relative;
+  border-bottom: 5px solid var(--segunda-cor);
+  background-color: rgba(0, 0, 0, 0.292);
 }
 
 .user {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
 }
 
 #container-user {
-
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #container-user * {
-    color: var(--cor-letras);
+  color: var(--cor-letras);
 }
 
 .user img {
-    border-radius: 50%;
-    padding: 25px;
+  border-radius: 50%;
+  padding: 25px;
 }
 
 /*habilidades*/
 .habilidade {
-    padding: 5px;
-    margin: 10px;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
-    border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
+  border-radius: 5px;
 }
 
 .habilidade img {
-    width: 150px;
-    height: 100px;
+  width: 150px;
+  height: 100px;
 }
 
 #container-habilidades {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: auto auto auto auto auto;
-    text-align: center;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
 }
 
 section {
-    padding: 75px;
+  padding: 75px;
 }
 
 section h1 {
-    padding: 15px;
-    font-size: 50px;
+  padding: 15px;
+  font-size: 50px;
 }
 
 .nome-habilidade {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
-
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
 }
 
 .habilidade a {
-    text-decoration: none;
-    float: right;
+  text-decoration: none;
+  float: right;
 }
+/*Posts*/
+    /*main*/
+    .posts-main{
+        padding: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .posts-main .card{
+        margin: 15px;
+    }
+    .card-text{
+        color: black;
+    }
