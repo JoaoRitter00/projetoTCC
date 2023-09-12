@@ -1,0 +1,145 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    font-family: 'Josefin Sans'//estilo de font
+    padding: 0 //delimita a distancia entre o elemento e suas bordas, ou seja dentro dele próprio
+    margin: 0//delimita a distancia entre o elemento e outros elementos
+    box-sizing: border-box //tamanho da caixa
+body
+    background-color: variables.$cor-bg//cor do fundo
+    color: variables.$cor-texto//muda a cor do texto
+
+    a
+        color: variables.$cor-texto //muda a cor do link
+        text-decoration: none //tira o underline do link
+        transition: .4s //tempo de transição da animação hover
+
+    ul
+        list-style: none//tira a bolinha
+.header
+    display: flex//deixa os elementos dentro do header um do lado do outro
+    justify-content: space-between //vai dar um espaçamento igual entre os elementos
+    @include mixins.container
+
+    @include mixins.mobile
+        padding: 1.1rem //rem = unidade de medida que uma unidade desse valor mede o tamanho padrão da fonte ou seja, na maioria das vezes 16px
+
+    &-brand //.header-brand
+        color: variables.$cor-secundaria
+        font-size: 3rem//muda o tamanho da fonte
+    &-navbar // .header-navbar
+        ul
+            height: 100%//altura
+            @include mixins.flex-center
+            //^ um "mix" que centraliza e transforma o elemento em flex
+
+            @include mixins.mobile
+            //"mix" para responsividade com mobile
+                display: none//faz desaparecer
+
+            li
+                margin: 0 1rem
+                text-transform: .8rem //transforma o texto
+
+                .active
+                    color: variables.$cor-secundaria
+
+                a
+                    &:hover
+                        color: variables.$cor-secundaria
+    &-social-media
+        ul
+            @include mixins.flex-center
+            height: 100%
+
+            @include mixins.mobile
+                display: none
+
+            li
+                margin: 0 1rem
+
+                a
+                    &:hover
+                        //o & pega a ultima tag/classe chamada
+                        color: variables.$cor-principal
+.gallery
+    @include mixins.flex-center
+    @include mixins.container
+    flex-wrap: wrap//dita se o elemento quebra as linhas se passa do maximo da tela
+    justify-content: space-between
+    padding: 0
+
+    @include mixins.mobile
+        flex-direction: column
+
+    &-card
+        width: 31%
+        height: 400px
+        margin-bottom: 4%//atribui a margem somente em baixo do elemento
+        @include mixins.flex-center
+        flex-direction: column
+        color: variables.$cor-principal
+
+        @include mixins.mobile
+            width: 90%
+            margin-bottom: 6%
+
+        &-title
+            font-size: 2rem
+            font-weight: 300
+            margin-bottom: 1rem
+
+        &-btn
+            padding: .6rem 2rem
+            border: 2px solid variables.$cor-principal
+            color: variables.$cor-principal
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1px
+
+        &-text
+            position: absolute
+            bottom: 0
+            left: 0
+            padding: 15px 15px 0px 15px
+            display: none
+            transition-duration: .5s
+        &:hover
+            background-color: variables.$cor-principal
+            color: variables.$cor-secundaria
+
+    #card-1
+        @include mixins.bg-img('animais.jpg')
+
+    #card-2
+        @include mixins.bg-img('arquitetura.jpg')
+
+    #card-3
+        @include mixins.bg-img('cidade.jpg')
+
+    #card-4
+        @include mixins.bg-img('decoracao.jpg')
+
+    #card-5
+        @include mixins.bg-img('esportes.jpg')
+
+    #card-6
+        @include mixins.bg-img('natureza.jpg')
+
+    #card-7
+        @include mixins.bg-img('paisagem.jpg')
+
+    #card-8
+        @include mixins.bg-img('pessoas.jpg')
+
+    #card-9
+        @include mixins.bg-img('refeicoes.jpg')
+
+    footer
+        text-align: center
+        padding-bottom: 2rem
+
+    span
+        font-weight: bold
+        color: variables.$cor-secundaria

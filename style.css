@@ -218,15 +218,4 @@ section h1 {
 }
 /*Posts*/
     /*main*/
-    .posts-main{
-        padding: 50px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    .posts-main .card{
-        margin: 15px;
-    }
-    .card-text{
-        color: black;
-    }
+    

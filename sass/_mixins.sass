@@ -1,0 +1,32 @@
+@use 'variables'
+
+@mixin container
+  max-width: variables.$tamanho-container
+  padding: 1.5rem 0
+  margin: 0 auto
+
+@mixin flex-center
+  display: flex
+  align-items: center//é necessario o display flex, e alinha os itens verticalmente no meio
+  justify-content: center//é necessario o display flex, alinha os itens horizontalmente no meio
+
+@mixin bg-img($img)
+  background-image: url('../img/posts/#{$img}')//imagem do background
+  background-size: 100%//tamanho do background
+  background-position: center//posiciona a imagem de fundo, nesse caso no centro
+  background-repeat: no-repeat//a imagem de fundo não vai repetir
+  filter: grayscale(100%)//vai colocar uma especie de "filtro" na frente do background image
+  transition: .6s
+
+  &:hover
+    background-size: 110%
+    filter: grayscale(0%)
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/posts/#{$img}')
+    
+    p
+        display: block
+        
+        
+@mixin mobile
+  @media(max-width: 425px)
+    @content

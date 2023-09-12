@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "jquery": "^3.7.1",
     "mogoose": "^0.0.1-security",
     "mongodb": "^6.0.0",
     "mongoose": "^7.5.0"
