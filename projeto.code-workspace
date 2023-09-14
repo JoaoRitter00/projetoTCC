@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../sass"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "projeto"
+  }
+}

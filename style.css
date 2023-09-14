@@ -50,11 +50,16 @@ nav {
 .contianer {
   padding: 70px 0;
 }
+ul {
+  padding: 0;
+}
 
 p,
-li {
+li,
+a {
   color: white;
   font-size: 14px;
+  text-decoration: none;
 }
 
 #nav-container {
@@ -65,9 +70,11 @@ li {
 /*sidebar*/
 
 .offcanvas {
-  background-color: gray;
+  background-color: rgb(0, 0, 0);
 }
-
+.user {
+  border-bottom: 5px solid var(--segunda-cor);
+}
 .nav-user {
   background-image: url(img/bg_1.jpg);
   background-size: 400px 400px;
@@ -98,24 +105,58 @@ li {
   float: right;
 }
 
-.nav-links a {
+.nav-links ul li {
   text-decoration: none;
-  padding: 15px;
+  margin: 25px 0 25px 0;
+  padding: 10px;
+  position: relative;
+}
+.nav-links ul li:hover a {
+  color: var(--segunda-cor);
 }
 
-.nav-links a li {
+.nav-links ul li {
   list-style: none;
-  border-bottom: 1px solid rgba(82, 82, 82, 0.471);
+}
+.nav-links ul li {
+  position: relative;
+  text-decoration: none;
+  color: #222;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.448);
+}
+.nav-links ul li:after {
+  content: "";
+  position: absolute;
+  top: calc(
+    100% + 0.1px
+  ); /* Posiciona a barra de carregamento abaixo do link */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--segunda-cor);
+  display: block;
+  transition: width 0.7s ease-in-out;
+  transform-origin: 0% 50%;
+  transform: scaleX(0); /* Inicialmente escondida */
+}
+.nav-links ul li:hover:after {
+  width: 100%;
+  transform: scaleX(1); /* Exibe a barra de carregamento */
 }
 .btn:first-child {
-  border-radius: 47%;
+  height: 60px;
   position: fixed;
   z-index: 4;
   top: 5px;
+  background-color: rgba(0, 0, 0, 0.502);
 }
+
+
 .container {
   display: inline-block;
   cursor: pointer;
+  color: white;
 }
 
 .bar1,
@@ -123,7 +164,7 @@ li {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -149,7 +190,7 @@ li {
   background-image: url(img/wallpaper.png);
   background-size: cover;
   position: relative;
-  border-bottom: 5px solid var(--segunda-cor);
+
   background-color: rgba(0, 0, 0, 0.292);
 }
 
@@ -176,18 +217,18 @@ li {
 }
 
 /*habilidades*/
+.habilidade-box{
+  border: 2px solid linear-gradient(to right, (255, 255, 255), darkorchid)1;
+}
 .habilidade {
   padding: 5px;
   margin: 10px;
-  border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(to right, rgb(255, 255, 255), darkorchid) 1;
-  border-radius: 5px;
 }
 
-.habilidade img {
+#container-habilidades img {
   width: 150px;
   height: 100px;
+  border-radius: 5px;
 }
 
 #container-habilidades {
@@ -216,6 +257,9 @@ section h1 {
   text-decoration: none;
   float: right;
 }
+
 /*Posts*/
-    /*main*/
-    
+/*main*/
+.posts-main {
+  padding-top: 50px;
+}

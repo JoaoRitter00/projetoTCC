@@ -104,19 +104,22 @@ body
             left: 0
             padding: 15px 15px 0px 15px
             display: none
-            transition-duration: .5s
+            opacity: 0
+            transition: opacity 0.2s ease-in-out
+            
         &:hover
             background-color: variables.$cor-principal
             color: variables.$cor-secundaria
 
     #card-1
-        @include mixins.bg-img('animais.jpg')
+        @include mixins.bg-img('Fakenews.png')
 
     #card-2
-        @include mixins.bg-img('arquitetura.jpg')
+        @include mixins.bg-img('ai.png')
 
     #card-3
-        @include mixins.bg-img('cidade.jpg')
+        @include mixins.bg-img('Dynamic.png')
+        
 
     #card-4
         @include mixins.bg-img('decoracao.jpg')

@@ -2,22 +2,22 @@ const habilidades = [
     {
         nome: 'Volleyball',
         valorAdicional: 0.5,
-        img: 'paisage.jpg'
+        img: 'Volleyball.jpg'
     },
     {
         nome: 'Web-Development',
         valorAdicional: 0.5,
-        img: 'paisage.jpg'
+        img: 'Web-design.jpg'
     },
     {
         nome: 'Proatividade',
         valorAdicional: 0.5,
-        img: 'paisage.jpg'
+        img: 'Proativity.jpg'
     },
     {
         nome: 'Teamwork',
         valorAdicional: 0.5,
-        img: 'paisage.jpg'
+        img: 'Teamwork.jpg'
     },
     {
         nome: 'Espancar o Saulo',

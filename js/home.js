@@ -18,12 +18,12 @@ for (let capas of capa) {
     containerUser.innerHTML += textHTML1
 }
 for (let habilidade of habilidades) {
-    let textHTML2 = `
+    let textHTML2 = `<div class="habilidade-box">
+    <img src="img/hab/${habilidade.img}" alt="">
     <div class="habilidade">
-    <img src="img/${habilidade.img}" alt="">
     <p class="nome-habilidade">${habilidade.nome}</p>
     <a href="">0 &#9825;</a>
-    </div>
+    </div></div>
     `
     containerHabilidades.innerHTML += textHTML2
 
